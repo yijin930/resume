@@ -1,0 +1,272 @@
+// color variable
+$color_purple: #EBE4F4
+$color_midpurple: #D2C3D9
+$color_darkpurple: #5a157a
+$color_darkredpurple: #6C3365
+$color_yellow: #EFECEA
+$color_white: white
+$color_grey: #333
+
+// base size
+$base_line_width: 5px
+
+//break width
+$break_large: 1024px
+$break_large: 768px
+$break_large: 400px
+
+// font setting
+$font_family: Times New Roman , 微軟正黑體
+
+*
+    position: relative
+    box-sizing: border-box
+
+html,body
+    padding: 0px
+    margin: 0px
+    height: 100%
+    background-color: $color_yellow
+    font-family: $font_family
+    color: $color_darkpurple
+
+::-webkit-scrollbar
+    width: 5px
+    height: 5px
+    
+::-webkit-scrollbar-thumb
+    background-color: $color_purple
+    border-radius: 5px
+
+hr
+    color: $color_darkpurple
+    margin: 0px
+
+.container
+    // border: solid 2px
+    margin: 30px auto
+    max-width: 1050px
+    
+    
+
+    // position: absolute
+    // top: 50%
+    // left: 50%
+    // transform: translate(-50%, -50%)
+
+.content
+    // border: solid 2px
+    display: inline-block    
+    vertical-align: top
+    margin: 0px
+
+
+.personal
+    display: inline-block  
+    vertical-align: top
+    margin: auto 5px auto 0px
+    width: 370px
+    height: 850px
+    background-color: $color_midpurple
+    border: 2px solid $color_midpurple
+    
+
+    & h2
+        color: $color_darkredpurple
+        text-align: center
+        letter-spacing: 2px
+        margin: 0px
+        padding-top: 20px
+        font-size: 35px
+    
+    & h3
+        color: $color_darkredpurple
+        text-align: center
+        margin: 0px
+        
+
+    & .introduce
+        top: 10px
+
+        & .introduce_title
+            width: 90%
+            text-align: center
+            font-size: 20px
+            font-weight: 900
+            letter-spacing: 20px
+            text-indent: 20px
+            margin-left: auto
+            margin-right: auto
+            margin-top: 20px
+            color: $color_darkpurple
+            border-bottom: 2px solid $color_purple
+        
+    & .headshot
+        margin-left: auto
+        margin-right: auto
+        width: 200px
+        height: 200px
+        margin-top: 20px
+        border: 3px solid $color_purple
+        border-radius: 50%
+        overflow: hidden
+
+    & .headshot1
+        margin: 0px
+        width: 250px
+        // border: 3px solid $color_purple
+        // border-radius: 50%
+        top: -35px
+        left: -25px
+        position: absolute
+
+    & .information
+        top: 450px
+        margin-left: 10px
+
+
+.personal_left
+    display: inline-block
+    margin-left: 40px
+
+    & .picture
+        width: 30px
+        height: 30px
+        margin: 3px
+    
+    & .narrate
+        top: -5px
+        margin-top: 0px 
+        margin-bottom: 5px
+        padding-left: 40px
+
+
+.personal_right
+    display: inline-block
+    vertical-align: top
+    
+    & p
+        margin: 3px
+        font-size: 17px
+        line-height: 30px
+        font-weight: 900
+        letter-spacing: 2px
+
+
+            
+
+.personal2
+    display: inline-block  
+    background-color: $color_white
+    border: solid 2px $color_midpurple
+    margin: auto 0px auto 0px
+    width: 670px
+    height: 100%
+
+    // overflow-y: auto
+
+    & h2
+        margin-left: 20px
+
+    & .borderline
+        // position: absolute
+        // border-left: solid 1px
+        // top: 80px
+        // left: 15.45px
+        // height: 114px
+        // z-index: 2
+
+
+.education
+    background-color: $color_purple
+    margin-top: 3px
+
+    & .date
+        display: inline-block 
+        margin-left: 11px
+        margin-right: 10px
+        font-weight: bold
+      
+    & .narrate
+        display: inline-block 
+
+
+
+.experience
+    background-color: $color_purple
+    margin-top: 3px
+    display: flex
+    align-items: center
+
+    & .date
+        display: inline-block 
+        margin-left: 11px
+        margin-right: 10px
+        width: 18%
+        vertical-align: top
+        font-weight: bold
+
+    & .narrate
+        display: inline-block 
+        width: 80%
+        padding-right: 10px
+        text-align: justify
+
+.achievement
+    background-color: $color_purple
+    margin-top: 3px
+    display: flex
+    align-items: center
+
+    & .narrate
+        width: 100%
+        padding: 0px 10px
+        text-align: justify
+
+.license
+    // border: solid 2px
+    display: block
+    overflow-x: auto
+    // 橫向滾輪
+    white-space: nowrap
+
+    & .license_block
+        display: inline-block
+        text-align: center
+        background-color: $color_purple
+        margin-right: 3px
+
+        & p
+            letter-spacing: 1px
+            font-weight: 500
+
+    & .picture
+        width: 200px
+        height: 200px
+        overflow: hidden
+
+    & .picture1
+        top: 25px
+
+@media (max-width: 917px)
+    .personal
+        display: block
+        margin: auto
+        width: 90%
+        position: relative
+
+    .personal2
+        display: block
+        margin: auto
+        width: 90%
+        height: 100%
+        left: 0px
+
+
+    
+
+
+
+
+
+        

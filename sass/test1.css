@@ -1,0 +1,263 @@
+@charset "UTF-8";
+* {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #EFECEA;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #EFECEA;
+  border-radius: 5px;
+}
+
+hr {
+  color: #5a157a;
+  margin: 0px;
+}
+
+body {
+  border-bottom: solid 20px #D2C3D9;
+  font-family: Times New Roman, 微軟正黑體;
+  color: #5a157a;
+}
+
+.test {
+  border: solid 2px;
+}
+
+.container {
+  margin: 30px auto;
+  max-width: 1050px;
+}
+
+.content {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0px;
+}
+
+.personal {
+  display: inline-block;
+  vertical-align: top;
+  margin: auto 5px auto 0px;
+  width: 35%;
+  height: 850px;
+  background-color: #D2C3D9;
+  border: 2px solid #D2C3D9;
+}
+
+.personal h2 {
+  color: #6C3365;
+  text-align: center;
+  letter-spacing: 2px;
+  margin: 0px;
+  padding-top: 20px;
+  font-size: 35px;
+}
+
+.personal h3 {
+  color: #6C3365;
+  text-align: center;
+  margin: 0px;
+}
+
+.personal .introduce {
+  top: 10px;
+}
+
+.personal .introduce .introduce_title {
+  width: 90%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 20px;
+  text-indent: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  color: #5a157a;
+  border-bottom: 2px solid #EBE4F4;
+}
+
+.personal .headshot {
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+  border: 3px solid #EBE4F4;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.personal .headshot1 {
+  margin: 0px;
+  width: 250px;
+  top: -35px;
+  left: -25px;
+  position: absolute;
+}
+
+.personal .information {
+  top: 450px;
+  margin-left: 10px;
+}
+
+.personal_left {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.personal_left .picture {
+  width: 30px;
+  height: 30px;
+  margin: 3px;
+}
+
+.personal_left .narrate {
+  top: -5px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  padding-left: 40px;
+}
+
+.personal_right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.personal_right p {
+  margin: 3px;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.personal2 {
+  display: inline-block;
+  background-color: white;
+  border: solid 2px #D2C3D9;
+  margin: auto 0px auto 0px;
+  width: 64%;
+  height: 850px;
+  overflow-y: auto;
+}
+
+.personal2 h2 {
+  margin-left: 20px;
+}
+
+.education {
+  background-color: #EBE4F4;
+  margin-top: 3px;
+}
+
+.education .date {
+  display: inline-block;
+  margin-left: 11px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.education .narrate {
+  display: inline-block;
+}
+
+.experience {
+  background-color: #EBE4F4;
+  margin-top: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.experience .date {
+  display: inline-block;
+  margin-left: 11px;
+  margin-right: 10px;
+  width: 18%;
+  vertical-align: top;
+  font-weight: bold;
+}
+
+.experience .narrate {
+  display: inline-block;
+  width: 80%;
+  padding-right: 10px;
+  text-align: justify;
+}
+
+.achievement {
+  background-color: #EBE4F4;
+  margin-top: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.achievement .narrate {
+  width: 100%;
+  padding: 0px 10px;
+  text-align: justify;
+}
+
+.license {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.license .license_block {
+  display: inline-block;
+  text-align: center;
+  background-color: #EBE4F4;
+  margin-right: 3px;
+}
+
+.license .license_block p {
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.license .picture {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.license .picture1 {
+  top: 25px;
+}
+
+@media (max-width: 917px) {
+  .personal {
+    display: block;
+    margin: auto;
+    width: 90%;
+  }
+  .personal2 {
+    display: block;
+    margin: auto;
+    width: 90%;
+    height: 100%;
+  }
+}
+/*# sourceMappingURL=test1.css.map */
