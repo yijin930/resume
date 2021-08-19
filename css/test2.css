@@ -189,7 +189,7 @@ hr {
 
 .experience .narrate {
   display: inline-block;
-  width: 80%;
+  width: 78%;
   padding-right: 10px;
   text-align: justify;
 }
@@ -212,31 +212,84 @@ hr {
 }
 
 .license {
-  display: block;
-  overflow-x: auto;
-  white-space: nowrap;
-}
-
-.license .license_block {
-  display: inline-block;
-  text-align: center;
+  width: 100%;
+  height: 500px;
   background-color: #EBE4F4;
-  margin-right: 3px;
 }
 
-.license .license_block p {
-  letter-spacing: 1px;
-  font-weight: 500;
+.license div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-animation: slide 20s infinite;
+          animation: slide 20s infinite;
+}
+
+.license div:nth-child(1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.license div:nth-child(2) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.license div:nth-child(3) {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+
+.license div:nth-child(4) {
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+
+.license div:nth-child(5) {
+  -webkit-animation-delay: 16s;
+          animation-delay: 16s;
 }
 
 .license .picture {
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
-.license .picture1 {
-  top: 25px;
+@-webkit-keyframes slide {
+  5% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  15% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  20% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+
+@keyframes slide {
+  5% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  15% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  20% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
 }
 
 @media (max-width: 917px) {
@@ -252,6 +305,9 @@ hr {
     width: 90%;
     height: 100%;
     left: 0px;
+  }
+  .license {
+    height: 300px;
   }
 }
 /*# sourceMappingURL=test2.css.map */
